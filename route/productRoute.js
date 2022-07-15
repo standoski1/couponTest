@@ -1,5 +1,5 @@
 import express from 'express'
-import { checkoutProduct, createCoupon, createProduct, fetchProduct } from '../controller/productControl.js';
+import { checkoutProduct, createCoupon, createProduct, fetchProduct, HomeCoupon } from '../controller/productControl.js';
 
 
 
@@ -10,6 +10,7 @@ router.post('/createproduct', createProduct)
 router.get('/fetchproduct', fetchProduct)
 router.post('/checkout', checkoutProduct)
 router.post('/createcoupon', createCoupon)
+router.get('/', HomeCoupon)
 
 
 export default router;

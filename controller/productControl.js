@@ -5,6 +5,9 @@ import { Product } from "../model/productModel.js"
 
 
 
+export const HomeCoupon = async(req, res)=>{
+    res.send("Welcome to Hmepage")
+}
 
 
 export const createProduct = async(req, res)=>{

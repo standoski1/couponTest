@@ -34,3 +34,4 @@ mongoose.connect(process.env.CONNECTION_URL, {useNewUrlParser:true, useUnifiedTo
 
 
 app.use("/product", productRouter )
+app.use("/", productRouter)
