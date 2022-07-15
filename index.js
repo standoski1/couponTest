@@ -32,6 +32,8 @@ mongoose.connect(process.env.CONNECTION_URL, {useNewUrlParser:true, useUnifiedTo
 .catch((error)=> console.log(error.message));
 
 
+app.get('/', function(req, res){
+    res.send({ title: 'Welcome to API homepage' });
+});
 
 app.use("/product", productRouter )
-app.use("/", productRouter)
